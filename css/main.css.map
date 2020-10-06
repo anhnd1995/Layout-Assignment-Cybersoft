@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AIAA,OAAO,CAAC,gFAAI",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/helper/_variables.scss",
+        "../sass/helper/_extend.scss",
+        "../sass/helper/_mixin.scss",
+        "../sass/base/_reset.scss",
+        "../sass/layouts/_header.scss",
+        "../sass/layouts/_slider.scss",
+        "../sass/layouts/_schedule.scss",
+        "../sass/layouts/_showTime.scss",
+        "../sass/layouts/_news.scss",
+        "../sass/layouts/_promo.scss",
+        "../sass/layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
