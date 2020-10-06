@@ -1,2 +1,13 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@font-face {
+  font-family: 'SF-regular';
+  src: url("../../assets/font/SFProDisplay-Regular.woff") format("woff2"), url("../../assets/font/SFProDisplay-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+html, body {
+  font-family: 'SF-regular';
+}
 /*# sourceMappingURL=main.css.map */
