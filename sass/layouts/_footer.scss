@@ -1,0 +1,116 @@
+footer{
+    background-color: #222222;
+    font-size: $fs-xs;
+    color: $color-gray-btn;
+
+    h4{
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    a{
+        color: $color-gray-btn;
+        transition: .5s;
+        &:hover{
+            color: white;
+        }
+    }
+
+
+    .container{
+        .top{
+            display: flex;
+           
+            &__left{
+                flex: 1;
+                padding: 0 15px;
+
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+
+
+                    li{
+                        width: 120px;
+                        
+                    }
+                }
+            }
+
+            &__mid{
+                flex: 1;
+                padding: 0 15px;
+                &-icon{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    a{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            margin-right: 15px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+
+            &__right{
+                flex: 2;
+                display: flex;
+                padding: 0 15px;
+                justify-content: space-around;
+
+                &-item{
+                    text-align: center;
+                    .icon{
+                        img{
+                            width: auto;
+                            height: 30px;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        hr{
+            margin: 20px 0;
+            border-top: 1px solid #4a4a4a;
+        }
+
+        .bot{
+            display: flex;
+
+            &__left{
+                flex: 1;
+                
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+
+            &__content{
+                flex:9;
+                padding: 0 15px;
+                font-size: $fs-xs;
+                h4{
+                    color: white;
+                    
+                }
+            
+            }
+
+            &__right{
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
