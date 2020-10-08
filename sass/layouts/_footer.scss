@@ -21,7 +21,7 @@ footer{
     .container{
         .top{
             display: flex;
-           
+            padding-top: 20px;
             &__left{
                 flex: 1;
                 padding: 0 15px;
@@ -29,7 +29,8 @@ footer{
                 ul{
                     display: flex;
                     flex-wrap: wrap;
-
+                    align-items: center;
+                    
 
                     li{
                         width: 120px;
@@ -52,6 +53,9 @@ footer{
                             border-radius: 50%;
                             margin-right: 15px;
                             margin-bottom: 15px;
+                            &:hover{
+                                filter: brightness(70%);
+                            }
                         }
                     }
                 }
@@ -70,6 +74,7 @@ footer{
                             width: auto;
                             height: 30px;
                             margin: 5px;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -84,13 +89,16 @@ footer{
 
         .bot{
             display: flex;
+            padding-bottom: 20px;
 
             &__left{
                 flex: 1;
-                
+                text-align: center;
                 img{
-                    width: 100%;
+                    width: 80px;
+                    height: 40px;
                     border-radius: 8px;
+                   
                 }
             }
 
@@ -102,13 +110,107 @@ footer{
                     color: white;
                     
                 }
+
+                a{
+                    color: $color-red-primary;
+                    &:hover{
+                        color: darken($color: $color-red-primary, $amount: 20%);
+                    }
+                }
             
             }
 
             &__right{
-                flex: 1;
+                flex: 2;
+                text-align: center;
                 img{
-                    width: 100%;
+                    width: 130px;
+                    height: 50px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    footer{
+        .container{
+            .top{
+                &__left{
+                    flex: 1;
+                }
+                &__right{
+                    flex: 1.5;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    footer{
+        .container{
+            max-width: 90%;
+            .top{
+                h4{
+                    display: none;
+                }
+
+                &__left{
+                    ul{
+                        height: 100%;
+                        li:nth-child(odd){
+                            display: none;
+                        }
+                    }
+                }
+
+                &__mid{
+                    display: none;
+                }
+
+                &__right{
+                    justify-content: flex-start;
+                    &-item:first-of-type{
+                        display: none;
+                    }
+                    &-item{
+                        text-align: left;
+                    }
+                }
+            }
+
+            .bot{
+                &__content{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        .container{
+            .top{
+                flex-direction: column;
+                &__left{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &__right{
+                    justify-content: center;
+                }
+                
+            }
+
+            .bot{
+                flex-direction: column;
+                &__left{
+                    margin-bottom: 20px;
                 }
             }
         }
