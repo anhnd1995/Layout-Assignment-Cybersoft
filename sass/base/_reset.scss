@@ -3,4 +3,12 @@
 
 html, body{
     font-family: 'SF-regular';
+    line-height: 1.8;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
 }

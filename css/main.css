@@ -9,5 +9,14 @@
 
 html, body {
   font-family: 'SF-regular';
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
