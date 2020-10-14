@@ -20,6 +20,102 @@ a:hover {
   text-decoration: none;
 }
 
+.textbox img {
+  display: block;
+  border-radius: 5px;
+}
+
+.textbox a {
+  color: black;
+  transition: .5s;
+}
+
+.textbox a:hover {
+  color: #fb4226;
+}
+
+.textbox .text {
+  padding: 15px 0;
+}
+
+.textbox .text h3 {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.textbox .text p {
+  font-size: 13px;
+  line-height: 19px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.textbox .text i {
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: .5;
+}
+
+.textbox .text span {
+  font-size: 12px;
+  opacity: .5;
+  margin-right: 25px;
+}
+
+.textbox__item img {
+  padding: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  height: 60px;
+}
+
+.textbox__item h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 40px;
+}
+
+.textbox__item.row {
+  flex-wrap: unset;
+  margin: 0;
+}
+
+.news .container .nav {
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/img/back-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  border: none;
+}
+
+.news .container .nav .nav-item .nav-link.active {
+  border: none;
+  background: transparent;
+  color: #fb4226;
+  font-size: 24px;
+}
+
+.news .container .nav .nav-item .nav-link {
+  color: black;
+  font-size: 20px;
+  border: none;
+  transition: .5s;
+  font-weight: 600;
+}
+
+.news .container .nav .nav-item .nav-link:hover {
+  border: none;
+  font-size: 24px;
+}
+
 .promo {
   background: url(../../assets/img/backapp.jpg);
   background-repeat: no-repeat;
