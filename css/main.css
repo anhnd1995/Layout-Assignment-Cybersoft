@@ -116,6 +116,39 @@ a:hover {
   font-size: 24px;
 }
 
+.news .container .showMore {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.news .container .showMore a {
+  cursor: pointer;
+  border: 1px solid #949494;
+  color: #949494;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  border-radius: 3px;
+  transition: .5s;
+}
+
+.news .container .showMore a:hover {
+  background-color: #fb4226;
+  color: white;
+  transition: .5s;
+}
+
+.news .container .tab-content .tab-pane .cinema-item {
+  display: none;
+}
+
+.news .container .tab-content .tab-pane .review-item {
+  display: none;
+}
+
+.news .container .tab-content .tab-pane .coupon-item {
+  display: none;
+}
+
 .promo {
   background: url(../../assets/img/backapp.jpg);
   background-repeat: no-repeat;

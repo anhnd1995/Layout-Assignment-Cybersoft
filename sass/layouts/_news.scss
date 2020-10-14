@@ -29,6 +29,42 @@
                     }
                 }
             }
+
         }
+
+        .showMore{
+            text-align: center;
+            margin-bottom: 40px;
+            a{
+                cursor: pointer;
+                border: 1px solid $color-gray-btn;
+                color: $color-gray-btn;
+                text-transform: uppercase;
+                padding: 10px 35px;
+                border-radius: 3px;
+                transition: .5s;
+
+                &:hover{
+                    background-color: $color-red-primary;
+                    color: white;
+                    transition: .5s;
+                }
+            }
+        }
+
+        .tab-content{
+            .tab-pane{
+                .cinema-item{
+                    display: none;
+                }
+                .review-item{
+                    display: none;
+                }
+                .coupon-item{
+                    display: none;
+                }
+            }
+        }
+
     }
 }
