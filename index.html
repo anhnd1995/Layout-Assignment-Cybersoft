@@ -14,6 +14,9 @@
      <!-- CSS File-->
      <link rel="stylesheet" href="./css/main.css">
 
+     <!-- CSS library -->
+    <link rel="stylesheet" href="./css/libs/slick.css">
+    <link rel="stylesheet" href="./css/libs/slick-theme.css">
 
 </head>
 <body>
@@ -23,7 +26,35 @@
         <section class="schedule"></section>
         <section class="showTime"></section>
         <section class="news"></section>
-        <section class="promo"></section>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__text">
+                    <div class="content">
+                        <h3>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h3>
+                        <br>
+                        <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                        <br>
+                        <a href="">App miễn phí - Tải về ngay!</a>
+                        <p>TIX có hai phiên bản <span>iOS</span> & <span>Android</span></p>
+                    </div>
+                </div>
+                <div class="promo__img">
+                    <div class="promo__img-mobile">
+                        <div class="mobile">
+                            <img src="./assets/img/mobile.png" alt="">
+                            <div class="promo__carousel">
+                                <div class="item"><img src="./assets/img/slide1.jpg" alt=""></div>
+                                <div class="item"><img src="./assets/img/slide2.jpg" alt=""></div>
+                                <div class="item"><img src="./assets/img/slide3.jpg" alt=""></div>
+                                <div class="item"><img src="./assets/img/slide4.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
     </main>
     <footer></footer>
     
@@ -34,6 +65,19 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="./js/libs/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.promo__carousel').slick({
+        arrows: false,
+        focusOnSelect: false,
+        mobileFirst: true,
+        autoplay: true
+    });
+  });
+</script>
 
 </body>
 </html>
