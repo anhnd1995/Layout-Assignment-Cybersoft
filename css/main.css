@@ -10,4 +10,86 @@
 html, body {
   font-family: 'SF-regular';
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 40px;
+  position: fixed;
+}
+
+header .left .webLogo {
+  width: 50px;
+  height: 50px;
+}
+
+header .center {
+  font-size: 14px;
+}
+
+header .center ul li {
+  display: inline;
+}
+
+header .center ul li a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .center ul li a:hover {
+  color: #fb4226;
+}
+
+header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+header .right .acount {
+  padding-right: 10px;
+  border-right: 1px solid gray;
+}
+
+header .right .acount a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .right .acount a img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+header .right .selectLocation {
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .right .selectLocation img {
+  width: 16px;
+  height: 16px;
+  padding-right: 3px;
+}
 /*# sourceMappingURL=main.css.map */
