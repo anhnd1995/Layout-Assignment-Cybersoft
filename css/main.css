@@ -134,6 +134,119 @@ a:hover {
   padding: 0 15px;
 }
 
+.showTime {
+  margin-bottom: 30px;
+}
+
+.showTime .seperator {
+  background: url(../../assets/img/back-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.showTime .container .list-group-item {
+  opacity: 0.7;
+  transition: .5s;
+}
+
+.showTime .container .list-group-item:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+.showTime .container .list-group-item.active {
+  opacity: 1;
+  background-color: white;
+  border-color: #949494;
+}
+
+.showTime .container .col-3 .tab-pane .row {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  opacity: .5;
+  transition: .5s;
+}
+
+.showTime .container .col-3 .tab-pane .row .theater {
+  color: #8bc541;
+}
+
+.showTime .container .col-3 .tab-pane .row h5 {
+  font-size: 14px;
+}
+
+.showTime .container .col-3 .tab-pane .row p {
+  font-size: 12px;
+}
+
+.showTime .container .col-3 .tab-pane .row a {
+  color: #fb4226;
+  font-size: 12px;
+}
+
+.showTime .container .col-3 .tab-pane .row:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+.showTime .container .col-3 .tab-pane .row.active {
+  opacity: 1;
+}
+
+.showTime .container .col-8 #accordion .col-10 .rated {
+  padding: 0 10px;
+  background-color: #00ac4d;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.showTime .container .col-8 #accordion .col-10 .--red {
+  background-color: #fb4226;
+  padding: 0 5px;
+}
+
+.showTime .container .col-8 #accordion .col-10 h5 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.showTime .container .col-8 #accordion .col-10 p {
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: 10px;
+}
+
+.showTime .container .col-8 #accordion .card-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.showTime .container .col-8 #accordion .card-body .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9b9b9b;
+  border: 1px solid #949494;
+  border-radius: 4px;
+  background-color: rgba(246, 246, 246, 0.5);
+  transition: .5s;
+}
+
+.showTime .container .col-8 #accordion .card-body .btn .startTime {
+  color: #108f3e;
+  font-size: 18px;
+}
+
+.showTime .container .col-8 #accordion .card-body .btn:hover .startTime {
+  color: #fa5238;
+  transition: .5s;
+}
+
 .news .container .nav {
   justify-content: center;
   align-items: center;
