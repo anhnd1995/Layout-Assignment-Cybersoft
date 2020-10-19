@@ -1,0 +1,3 @@
+.textbox .text p, .textbox__item h4{
+    -webkit-box-orient: vertical;
+}

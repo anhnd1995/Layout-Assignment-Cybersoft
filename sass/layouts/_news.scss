@@ -1,0 +1,70 @@
+.news{
+    .container{
+        .nav{
+            justify-content: center;
+            align-items: center;
+            background: url(../../assets/img/back-news.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 120px;
+            border: none;
+
+            .nav-item{
+                .nav-link.active{
+                    border: none;
+                    background: transparent;
+                    color: $color-red-primary;
+                    font-size: $fs-title-active;
+                }
+                
+                .nav-link{
+                    color: black;
+                    font-size: $fs-title;
+                    border: none;
+                    transition: .5s;
+                    font-weight: 600;
+                    &:hover{
+                        border: none;
+                        font-size: $fs-title-active;
+                    }
+                }
+            }
+
+        }
+
+        .showMore{
+            text-align: center;
+            margin-bottom: 40px;
+            a{
+                cursor: pointer;
+                border: 1px solid $color-gray-btn;
+                color: $color-gray-btn;
+                text-transform: uppercase;
+                padding: 10px 35px;
+                border-radius: 3px;
+                transition: .5s;
+
+                &:hover{
+                    background-color: $color-red-primary;
+                    color: white;
+                    transition: .5s;
+                }
+            }
+        }
+
+        .tab-content{
+            .tab-pane{
+                .cinema-item{
+                    display: none;
+                }
+                .review-item{
+                    display: none;
+                }
+                .coupon-item{
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

@@ -13,6 +13,7 @@
  
      <!-- CSS File-->
      <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/tweak.css">
 
      <!-- CSS library -->
     <link rel="stylesheet" href="./css/libs/slick.css">
@@ -25,7 +26,580 @@
         <section class="slider"></section>
         <section class="schedule"></section>
         <section class="showTime"></section>
-        <section class="news"></section>
+        <section class="news">
+            <div class="container">
+                <ul class="nav nav-tabs pb-2" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="cinema-tab" data-toggle="tab" href="#cinema" role="tab" aria-controls="cinema" aria-selected="true">Điện Ảnh 24h</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Review</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="coupon-tab" data-toggle="tab" href="#coupon" role="tab" aria-controls="coupon" aria-selected="false">Khuyến Mãi</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="cinema" role="tabpanel" aria-labelledby="cinema-tab">
+                        <div class="cinema-item py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cinema-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">TENET công bố ngày khởi chiếu chính thức tại Việt Nam</a></h3>
+                                        <p>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Khi phụ nữ không còn ở thế trốn chạy của nạn nhân</a></h3>
+                                        <p>Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô Hình mang đến một góc nhìn mới về hình ảnh những người phụ nữ thời hiện đại. Điều đó được thể hiện qua câu chuyện về hai người phụ nữ cùng hợp sức để vạch mặt tên tội phạm có sở thích bệnh hoạn với phụ nữ.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/greenland-tham-hoa-thien-thach-16000538668854.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</a></h3>
+                                        <p>Bộ phim hành động mang đề tài tận thế Greenland: Thảm Họa Thiên Thạch đến từ nhà sản xuất của loạt phim John Wick đã tung ra trailer đầu tiên, hé lộ nội dung cốt truyện, dàn diễn viên, cùng hàng loạt đại cảnh cháy nổ hoành tráng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/rom-c18-16008300686919.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Diễn viên đặc biệt của Bằng Chứng Vô Hình</a></h3>
+                                        <p>Bằng Chứng Vô Hình tiết lộ thêm với khán giả một diễn viên vô cùng đặc biệt, đi diễn như đi chơi và không hề nghe theo sự chỉ đạo của đạo diễn Trịnh Đình Lê Minh. Đó chính là chú chó Ben – trợ thủ đắc lực của cô gái mù Thu (Phương Anh Đào).</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cinema-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showMore">
+                            <a class="loadMore">xem thêm</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <div class="review-item py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showMore">
+                            <a class="loadMore">xem thêm</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show" id="coupon" role="tabpanel" aria-labelledby="coupon-tab">
+                        <div class="coupon-item py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon-item  py-3">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h3>
+                                        <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người yêu phim không thể bỏ lỡ Ante</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href=""> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h3>
+                                        <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">5</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503918450.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a></h3>
+                                        <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">0</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">0</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox">
+                                    <div class="thumbnail"><img src="./assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122361852.png" alt=""></div>
+                                    <div class="text">
+                                        <h3><a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a></h3>
+                                        <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siêu “nặng đô”.</p>
+                                        <i class="far fa-thumbs-up"></i><span class="count">15</span>
+                                        <i class="far fa-comment-alt"></i><span class="count">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 textbox --title">
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất </a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988694730.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a></h4>
+                                    </div>
+                                    <div class="textbox__item row">
+                                        <img src="./assets/img/5-ly-do-khien-ban-khong-the-bo-qua-bo-phim-cau-be-nguoi-go-pinocchio-15959331601790.png" alt="">
+                                        <h4 class="col-8 p-0"><a href="">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showMore">
+                            <a class="loadMore">xem thêm</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
         <section class="promo">
             <div class="container">
                 <div class="promo__text">
@@ -137,6 +711,7 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<script src="./js/main.js"></script>
 <script src="./js/libs/slick.min.js"></script>
 
 <script>
@@ -149,6 +724,8 @@ $(document).ready(function(){
     });
   });
 </script>
+
+
 
 </body>
 </html>
