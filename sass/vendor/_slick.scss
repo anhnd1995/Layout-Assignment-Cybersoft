@@ -1,0 +1,38 @@
+ .text-schedule{
+        padding: 5px 15px;
+        p:first-of-type{
+            font-weight: 600;
+            display: inline;
+        }
+
+        .rated{
+            padding: 4px 15px;
+            font-size: $fs-regular;
+            background-color: $color-green-1;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .movieLength{
+            font-size: $fs-small;
+        }
+        .--red{
+            background-color: $color-red-primary;
+        }
+    }
+
+    .slick-prev:before {
+        content: "<" !important;
+        color: $color-gray-btn !important;
+        font-size: 40px !important;
+        line-height: 0 !important;
+        // background-color: #eee;
+      }
+      .slick-next:before {
+        color: $color-gray-btn !important;
+        content: ">" !important;
+        color: $color-gray-btn !important;
+        font-size: 40px !important;
+        line-height: 0 !important;
+        // background-color: #eee;
+      } 
