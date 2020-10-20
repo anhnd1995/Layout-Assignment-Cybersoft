@@ -1,0 +1,126 @@
+.showTime{
+    margin-bottom: 30px;
+    .seperator{
+        background: url(../../assets/img/back-news.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .container{
+        .list-group-item{
+            opacity: 0.7;
+            transition: .5s;
+
+            &:hover{
+                opacity: 1;
+                transition: .5s;
+            }
+        }
+
+        .list-group-item.active{
+            opacity: 1;
+            background-color: white;
+            border-color: $color-gray-btn;
+        }
+
+        .col-3{
+            .tab-pane{
+            .row{
+                margin-bottom: 10px;
+                border-bottom: 1px solid #ddd;
+                cursor: pointer;
+                opacity: .5;
+                transition: .5s;
+                .theater{
+                    color: $color-green-3;
+                }
+                h5{
+                    font-size: $fs-regular;
+                }
+                p{
+                    font-size: $fs-xs;
+                }
+                a{
+                    color: $color-red-primary;
+                    font-size: $fs-xs;
+                }
+
+                &:hover{
+                    opacity: 1;
+                    transition: .5s;
+                }
+            }
+
+            .row.active{
+                opacity: 1;
+            }
+        }}
+        
+
+        .col-8{
+            #accordion{
+                .col-10{
+                    .rated{
+                        padding: 0 10px;
+                        background-color: $color-green-1;
+                        color: white;
+                        border-radius: 4px;
+                        margin-right: 10px;
+                        font-size: $fs-xs;
+
+                       
+                    }
+
+                    .--red{
+                        background-color: $color-red-primary;
+                        padding: 0 5px;
+                    }
+
+                    h5{
+                        font-weight: 600;
+                        font-size: $fs-regular;
+                    }
+                    p{
+                        font-size: $fs-xs;
+                        color: $color-gray-text;
+                        margin-top: 10px;
+                    }
+                }
+
+                .card-body{
+                    h4{
+                        font-size: $fs-large;
+                        font-weight: 600;
+                    }
+
+                    .btn{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        font-size: $fs-regular;
+                        font-weight: 600;
+                        color: $color-gray-text;
+                        border: 1px solid $color-gray-btn;
+                        border-radius: 4px;
+                        background-color: rgba(246,246,246,.5);
+                        transition: .5s;
+
+                        .startTime{
+                            color: $color-green-2;
+                            font-size: 18px;
+                            
+                        }
+
+                        &:hover{
+                            .startTime{
+                                color: $color-red-secondary;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
