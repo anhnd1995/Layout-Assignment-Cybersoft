@@ -1,0 +1,20 @@
+.slider{
+    padding-top: 60px;
+    #carouselMovie{
+        ol{
+            li{
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                color: $color-red-secondary;
+            }
+        }
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    max-height: 510px;
+                }
+            }
+        }
+    }
+}

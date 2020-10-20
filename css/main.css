@@ -21,6 +21,7 @@ a:hover {
 }
 
 header {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +35,7 @@ header {
   height: 60px;
   background: #ffffff;
   opacity: 0.9;
-  margin-left: 10px;
-  margin-right: 40px;
+  padding: 0 20px;
   position: fixed;
 }
 
@@ -132,6 +132,21 @@ header .mobile img {
   header .mobile {
     display: block;
   }
+}
+
+.slider {
+  padding-top: 60px;
+}
+
+.slider #carouselMovie ol li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  color: #fa5238;
+}
+
+.slider #carouselMovie .carousel-inner .carousel-item img {
+  max-height: 510px;
 }
 
 .promo {
