@@ -21,7 +21,160 @@
 
 </head>
 <body>
-    <header></header>
+    <header>
+        <a href="/" class="left">
+            <img class="webLogo" src="./assets/img/web-logo.png">
+         </a>
+        <div class="center">
+            <ul>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li><a href="#">Cụm rạp</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Ứng dụng</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="acount">
+                <a href="">
+                    <img src="./assets/img/avatar.png" alt="">
+                    Đăng Nhập
+                </a>
+            </div>
+            <div class="selectLocation dropdown">
+                <img class="place-header white" src="./assets/img//location-header.png">
+                <div class="dropdown-toggle selectMenu white ng-binding" data-toggle="dropdown">Hồ Chí Minh</div>
+                <ul class="dropdown-menu selectScroll">
+                    <!-- ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hồ Chí Minh" data-locid="0" class="ng-binding">Hồ Chí Minh</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Nội" data-locid="1" class="ng-binding">Hà Nội</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đà Nẵng" data-locid="2" class="ng-binding">Đà Nẵng</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hải Phòng" data-locid="3" class="ng-binding">Hải Phòng</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Biên Hoà" data-locid="4" class="ng-binding">Biên Hoà</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Nha Trang" data-locid="5" class="ng-binding">Nha Trang</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bình Dương" data-locid="6" class="ng-binding">Bình Dương</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Phan Thiết" data-locid="7" class="ng-binding">Phan Thiết</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hạ Long" data-locid="8" class="ng-binding">Hạ Long</a>
+                    </li>
+                    <!-- end ngRepeat: (locId, location) in listLocations -->
+                    <li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Cần Thơ" data-locid="9" class="ng-binding">Cần Thơ</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vũng Tàu" data-locid="10" class="ng-binding">Vũng Tàu</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quy Nhơn" data-locid="11" class="ng-binding">Quy Nhơn</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Huế" data-locid="12" class="ng-binding">Huế</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Long Xuyên" data-locid="13" class="ng-binding">Long Xuyên</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thái Nguyên" data-locid="14" class="ng-binding">Thái Nguyên</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Buôn Ma Thuột" data-locid="15" class="ng-binding">Buôn Ma Thuột</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bắc Giang" data-locid="16" class="ng-binding">Bắc Giang</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bến Tre" data-locid="17" class="ng-binding">Bến Tre</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Việt Trì" data-locid="18" class="ng-binding">Việt Trì</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Ninh Bình" data-locid="19" class="ng-binding">Ninh Bình</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thái Bình" data-locid="20" class="ng-binding">Thái Bình</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vinh" data-locid="21" class="ng-binding">Vinh</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bảo Lộc" data-locid="22" class="ng-binding">Bảo Lộc</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đà Lạt" data-locid="23" class="ng-binding">Đà Lạt</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Trà Vinh" data-locid="24" class="ng-binding">Trà Vinh</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Yên Bái" data-locid="25" class="ng-binding">Yên Bái</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Kiên Giang" data-locid="26" class="ng-binding">Kiên Giang</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vĩnh Long" data-locid="27" class="ng-binding">Vĩnh Long</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Cà Mau" data-locid="28" class="ng-binding">Cà Mau</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hậu Giang" data-locid="29" class="ng-binding">Hậu Giang</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Tây Ninh" data-locid="30" class="ng-binding">Tây Ninh</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Tuyên Quang" data-locid="31" class="ng-binding">Tuyên Quang</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thanh Hóa" data-locid="32" class="ng-binding">Thanh Hóa</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Nam Định" data-locid="33" class="ng-binding">Nam Định</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hải Dương" data-locid="34" class="ng-binding">Hải Dương</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Gia Lai" data-locid="35" class="ng-binding">Gia Lai</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Tĩnh" data-locid="36" class="ng-binding">Hà Tĩnh</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Phú Yên" data-locid="37" class="ng-binding">Phú Yên</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bạc Liêu" data-locid="38" class="ng-binding">Bạc Liêu</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Long An" data-locid="39" class="ng-binding">Long An</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đồng Hới" data-locid="40" class="ng-binding">Đồng Hới</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Nam" data-locid="41" class="ng-binding">Hà Nam</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bắc Ninh" data-locid="42" class="ng-binding">Bắc Ninh</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quảng Trị" data-locid="43" class="ng-binding">Quảng Trị</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Kon Tum" data-locid="44" class="ng-binding">Kon Tum</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Sóc Trăng" data-locid="45" class="ng-binding">Sóc Trăng</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Sơn La" data-locid="46" class="ng-binding">Sơn La</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Lạng Sơn" data-locid="47" class="ng-binding">Lạng Sơn</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quảng Ngãi" data-locid="48" class="ng-binding">Quảng Ngãi</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Mỹ Tho" data-locid="49" class="ng-binding">Mỹ Tho</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đồng Tháp" data-locid="50" class="ng-binding">Đồng Tháp</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hưng Yên" data-locid="51" class="ng-binding">Hưng Yên</a>
+                    </li><!-- end ngRepeat: (locId, location) in listLocations -->
+                </ul>
+            </div>
+        </div>
+        <div class="mobile">
+            <img src="./assets/img/menu-options.png" alt="">
+        </div>
+    </header>
     <main>
         <section class="slider"></section>
         <section class="schedule">
