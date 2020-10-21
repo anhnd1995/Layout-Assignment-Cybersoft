@@ -20,8 +20,8 @@ a:hover {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 header {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,8 +35,7 @@ header {
   height: 60px;
   background: #ffffff;
   opacity: 0.9;
-  margin-left: 10px;
-  margin-right: 40px;
+  padding: 0 20px;
   position: fixed;
 }
 
@@ -133,296 +132,116 @@ header .mobile img {
   header .mobile {
     display: block;
   }
-=======
-.textbox img {
-  display: block;
-  border-radius: 5px;
 }
 
-.textbox a {
-  color: black;
-  transition: .5s;
+.slider {
+  padding-top: 60px;
+  position: relative;
 }
 
-.textbox a:hover {
-  color: #fb4226;
+.slider #carouselMovie ol {
+  position: absolute;
+  bottom: 12%;
 }
 
-.textbox .text {
-  padding: 15px 0;
+.slider #carouselMovie ol li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
 }
 
-.textbox .text h3 {
-  font-size: 16px;
-  color: black;
-  font-weight: 600;
-  margin-bottom: 10px;
+.slider #carouselMovie ol .active {
+  background-color: #fa5238;
 }
 
-.textbox .text p {
-  font-size: 13px;
-  line-height: 19px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.textbox .text i {
-  font-size: 14px;
-  margin-right: 10px;
-  opacity: .5;
-}
-
-.textbox .text span {
-  font-size: 12px;
-  opacity: .5;
-  margin-right: 25px;
-}
-
-.textbox__item img {
-  padding: 0;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  height: 60px;
-}
-
-.textbox__item h4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  height: 40px;
-}
-
-.textbox__item.row {
-  flex-wrap: unset;
-  margin: 0;
-}
-
-.schedule {
-  height: auto;
-  margin-top: 60px;
-  margin-bottom: 10px;
-}
-
-.schedule .container .nav {
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-}
-
-.schedule .container .nav .nav-item .nav-link.active {
-  border: none;
-  background: transparent;
-  color: #fb4226;
-  font-size: 24px;
-}
-
-.schedule .container .nav .nav-item .nav-link {
-  color: black;
-  font-size: 20px;
-  border: none;
-  transition: .5s;
-  font-weight: 600;
-}
-
-.schedule .container .nav .nav-item .nav-link:hover {
-  border: none;
-  font-size: 24px;
-}
-
-.schedule .container .schedule__carousel .schedule__wrapper .schedule__item .schedule__content img {
+.slider #carouselMovie .carousel-inner .carousel-item {
   width: 100%;
+  position: relative;
 }
 
-.schedule .container .schedule__carousel .schedule__wrapper .schedule__item .schedule__content .text p {
-  display: inline;
-  font-size: 40px;
-  color: red;
-}
-
-.schedule .container .schedule__carousel .schedule__wrapper .slick-slide div img {
-  padding: 0 15px;
-}
-
-.showTime {
-  margin-bottom: 30px;
-}
-
-.showTime .seperator {
-  background: url(../../assets/img/back-news.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-}
-
-.showTime .container .list-group-item {
-  opacity: 0.7;
-  transition: .5s;
-}
-
-.showTime .container .list-group-item:hover {
+.slider #carouselMovie .carousel-inner .carousel-item:hover .carousel-caption button {
   opacity: 1;
-  transition: .5s;
 }
 
-.showTime .container .list-group-item.active {
-  opacity: 1;
-  background-color: white;
-  border-color: #949494;
+.slider #carouselMovie .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.showTime .container .col-3 .tab-pane .row {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
+.slider #carouselMovie .carousel-inner .carousel-item .carousel-caption button {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  opacity: 0;
+  background: rgba(44, 35, 35, 0.2);
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.slider #carouselMovie .carousel-inner .carousel-item .carousel-caption button:hover {
   opacity: .5;
-  transition: .5s;
 }
 
-.showTime .container .col-3 .tab-pane .row .theater {
-  color: #8bc541;
+.slider #carouselMovie .carousel-inner .carousel-item img {
+  max-height: 510px;
 }
 
-.showTime .container .col-3 .tab-pane .row h5 {
+.slider #carouselMovie .carousel-inner .carousel-item .linear-gradientBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(20%, transparent));
+  background: linear-gradient(to top, #000, transparent 20%);
+}
+
+.slider #homeTools {
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3);
+          box-shadow: rgba(0, 0, 0, 0.3);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider #homeTools .col-2 button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  white-space: nowrap;
   font-size: 14px;
 }
 
-.showTime .container .col-3 .tab-pane .row p {
-  font-size: 12px;
+@media screen and (max-width: 1000px) {
+  /* <=> width <= 1200px */
+  .slider .hideOnMobile {
+    display: none;
+  }
 }
 
-.showTime .container .col-3 .tab-pane .row a {
-  color: #fb4226;
-  font-size: 12px;
-}
-
-.showTime .container .col-3 .tab-pane .row:hover {
-  opacity: 1;
-  transition: .5s;
-}
-
-.showTime .container .col-3 .tab-pane .row.active {
-  opacity: 1;
-}
-
-.showTime .container .col-8 #accordion .col-10 .rated {
-  padding: 0 10px;
-  background-color: #00ac4d;
-  color: white;
-  border-radius: 4px;
-  margin-right: 10px;
-  font-size: 12px;
-}
-
-.showTime .container .col-8 #accordion .col-10 .--red {
-  background-color: #fb4226;
-  padding: 0 5px;
-}
-
-.showTime .container .col-8 #accordion .col-10 h5 {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.showTime .container .col-8 #accordion .col-10 p {
-  font-size: 12px;
-  color: #9b9b9b;
-  margin-top: 10px;
-}
-
-.showTime .container .col-8 #accordion .card-body h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.showTime .container .col-8 #accordion .card-body .btn {
-  margin-top: 10px;
-  margin-right: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #9b9b9b;
-  border: 1px solid #949494;
-  border-radius: 4px;
-  background-color: rgba(246, 246, 246, 0.5);
-  transition: .5s;
-}
-
-.showTime .container .col-8 #accordion .card-body .btn .startTime {
-  color: #108f3e;
-  font-size: 18px;
-}
-
-.showTime .container .col-8 #accordion .card-body .btn:hover .startTime {
-  color: #fa5238;
-  transition: .5s;
-}
-
-.news .container .nav {
-  justify-content: center;
-  align-items: center;
-  background: url(../../assets/img/back-news.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 120px;
-  border: none;
-}
-
-.news .container .nav .nav-item .nav-link.active {
-  border: none;
-  background: transparent;
-  color: #fb4226;
-  font-size: 24px;
-}
-
-.news .container .nav .nav-item .nav-link {
-  color: black;
-  font-size: 20px;
-  border: none;
-  transition: .5s;
-  font-weight: 600;
-}
-
-.news .container .nav .nav-item .nav-link:hover {
-  border: none;
-  font-size: 24px;
-}
-
-.news .container .showMore {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.news .container .showMore a {
-  cursor: pointer;
-  border: 1px solid #949494;
-  color: #949494;
-  text-transform: uppercase;
-  padding: 10px 35px;
-  border-radius: 3px;
-  transition: .5s;
-}
-
-.news .container .showMore a:hover {
-  background-color: #fb4226;
-  color: white;
-  transition: .5s;
-}
-
-.news .container .tab-content .tab-pane .cinema-item {
-  display: none;
-}
-
-.news .container .tab-content .tab-pane .review-item {
-  display: none;
-}
-
-.news .container .tab-content .tab-pane .coupon-item {
-  display: none;
->>>>>>> main
+@media screen and (max-width: 630px) {
+  /* <=> width <= 1200px */
+  .slider .carousel {
+    display: none;
+  }
 }
 
 .promo {
