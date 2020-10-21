@@ -20,10 +20,6 @@ a:hover {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
 header {
   z-index: 100;
   display: -webkit-box;
@@ -136,80 +132,6 @@ header .mobile img {
   header .mobile {
     display: block;
   }
-<<<<<<< HEAD
-=======
-=======
-.textbox img {
-  display: block;
-  border-radius: 5px;
-}
-
-.textbox a {
-  color: black;
-  transition: .5s;
-}
-
-.textbox a:hover {
-  color: #fb4226;
-}
-
-.textbox .text {
-  padding: 15px 0;
-}
-
-.textbox .text h3 {
-  font-size: 16px;
-  color: black;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.textbox .text p {
-  font-size: 13px;
-  line-height: 19px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.textbox .text i {
-  font-size: 14px;
-  margin-right: 10px;
-  opacity: .5;
-}
-
-.textbox .text span {
-  font-size: 12px;
-  opacity: .5;
-  margin-right: 25px;
-}
-
-.textbox__item img {
-  padding: 0;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  height: 60px;
-}
-
-.textbox__item h4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  height: 40px;
-}
-
-.textbox__item.row {
-  flex-wrap: unset;
-  margin: 0;
-}
-
-.schedule {
-  height: auto;
-  margin-top: 60px;
-  margin-bottom: 10px;
->>>>>>> main
 }
 
 .slider {
@@ -315,17 +237,11 @@ header .mobile img {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 630px) {
   /* <=> width <= 1200px */
   .slider .carousel {
     display: none;
   }
-=======
-.news .container .tab-content .tab-pane .coupon-item {
-  display: none;
->>>>>>> main
->>>>>>> main
 }
 
 .promo {
